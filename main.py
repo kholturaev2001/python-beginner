@@ -1,22 +1,14 @@
-# multiple assignments
+# methods of strings
 
-# name = 'Muhammadrasul'
-# age = 21
-# attractive = True
+name = 'BroCode'
 
-name, age, attractive = 'Muhammadrasul', 21, True
-
-print(name)
-print(age)
-print(attractive)
-
-# John = 20
-# Foo = 20
-# Ann = 20
-
-John = Patrick = Ann = Sandy = 20
-print(John)
-print(Patrick)
-print(Ann)
-print(Sandy)
-
+# print(len(name))
+# print(name.find('o'))
+# print(name.capitalize())
+# print(name.upper())
+# print(name.lower())
+# print(name.isdigit())   # does a string contain only numbers
+# print(name.isalpha())   # does a string contain only alphabetical letters
+# print(name.count('o'))
+# print(name.replace('o', 'a'))
+# print(name * 3)         # print var 3 times
