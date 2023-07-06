@@ -1,34 +1,22 @@
-# VARIABLES IN PYTHON
-# String
+# multiple assignments
 
-last_name = 'Kholturaev'
-first_name = 'Muhammadrasul'
-full_name = first_name + " " + last_name
-print('Hello, ' + full_name)
-# print(type(name))
+# name = 'Muhammadrasul'
+# age = 21
+# attractive = True
 
+name, age, attractive = 'Muhammadrasul', 21, True
 
+print(name)
+print(age)
+print(attractive)
 
-# Number
+# John = 20
+# Foo = 20
+# Ann = 20
 
-age = 20
-age += 2
-print('Your age is ' + str(age))
-# print(type(age))
-
-
-
-# Float
-
-height = 250.5
-print('Your height is: ' + str(height) + 'cm')
-# print(type(height))
-
-
-
-
-# Boolean variables
-human = True
-print("Are you a human: " + str(human))
-# print(type(human))
+John = Patrick = Ann = Sandy = 20
+print(John)
+print(Patrick)
+print(Ann)
+print(Sandy)
 
