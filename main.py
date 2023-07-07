@@ -1,15 +1,17 @@
-#type casting = convert the data type of value to another data type
+# useful functions related to numbers in python
 
-x = 1   #int
+import math
 
-y = 2.0 #float
-z = '3' #str
+pi = 3.14
+x = 1
+y = 44
+z = 3255
 
-x = int(x)
-y = str(y)
-z = float(z)
-
-
-print(x)
-print(y)
-print(z * 3)
+# print(round(pi))
+# print(math.ceil(pi))
+# print(math.floor(pi))
+# print(abs(pi))    #how far is the number from 0
+# print(pow(pi, 2))
+# print(math.sqrt(16))
+# print(max(x, y, z))
+# print(min(x, y, z))
