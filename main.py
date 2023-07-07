@@ -1,17 +1,23 @@
-# useful functions related to numbers in python
+# # slicing = create a substring by extracting elements from another string
+# #             indexing[] or slice()
+# #             [start:stop:step]
+#
+# name = 'Bro Code'
+#
+# first_name = name[0:3]
+#
+# last_name = name[4:]
+#
+# funky_name = name[0:8:2]  # or
+# funky_name_two = name[:2]  # or
+#
+# reversed_name = name[::-1]
+#
+# print(reversed_name)
 
-import math
 
-pi = 3.14
-x = 1
-y = 44
-z = 3255
+website = 'https://instagram.com'
 
-# print(round(pi))
-# print(math.ceil(pi))
-# print(math.floor(pi))
-# print(abs(pi))    #how far is the number from 0
-# print(pow(pi, 2))
-# print(math.sqrt(16))
-# print(max(x, y, z))
-# print(min(x, y, z))
+slice_url = slice(8, -4)
+
+print(website[slice_url])
