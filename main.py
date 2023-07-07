@@ -1,12 +1,19 @@
-# if statement = a block of code that will execute if it's condition is true
+# logical operators (and, or, not) = used to check if two or more conditional statements are true
 
-age = int(input('How old are you?: '))
+temp = int(input('What is the temperature outside?: '))
 
-if age == 100:
-    print("You are a century old!")
-elif age >= 18:
-    print('You are an adult!')
-elif age < 0:
-    print("You haven't been born yet!")
-else:
-    print('You are a child!')
+# if temp >= 0 and temp <= 30:
+#     print('the temperature is good today')
+#     print('go outside!')
+# elif temp < 0 or temp > 30:
+#     print('the temperature is bad today')
+#     print('stay inside')
+
+if not(temp >= 0 and temp <= 30):
+    print('the temperature is bad today')
+    print('stay inside')
+elif not(temp < 0 or temp > 30):
+    print('the temperature is good today')
+    print('go outside!')
+
+
