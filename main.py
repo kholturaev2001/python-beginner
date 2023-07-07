@@ -1,14 +1,15 @@
-# methods of strings
+#type casting = convert the data type of value to another data type
 
-name = 'BroCode'
+x = 1   #int
 
-# print(len(name))
-# print(name.find('o'))
-# print(name.capitalize())
-# print(name.upper())
-# print(name.lower())
-# print(name.isdigit())   # does a string contain only numbers
-# print(name.isalpha())   # does a string contain only alphabetical letters
-# print(name.count('o'))
-# print(name.replace('o', 'a'))
-# print(name * 3)         # print var 3 times
+y = 2.0 #float
+z = '3' #str
+
+x = int(x)
+y = str(y)
+z = float(z)
+
+
+print(x)
+print(y)
+print(z * 3)
