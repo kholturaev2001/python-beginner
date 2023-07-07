@@ -1,19 +1,20 @@
-# logical operators (and, or, not) = used to check if two or more conditional statements are true
+# while loop = a statement that will execute its block of code,
+#              as long as it's condition remains true
 
-temp = int(input('What is the temperature outside?: '))
-
-# if temp >= 0 and temp <= 30:
-#     print('the temperature is good today')
-#     print('go outside!')
-# elif temp < 0 or temp > 30:
-#     print('the temperature is bad today')
-#     print('stay inside')
-
-if not(temp >= 0 and temp <= 30):
-    print('the temperature is bad today')
-    print('stay inside')
-elif not(temp < 0 or temp > 30):
-    print('the temperature is good today')
-    print('go outside!')
+# name = ''
+#
+# while len(name) == 0:
+#     name = input("Enter your name: ")
+#
+# print('Hello, ' + name)
 
 
+
+# Version 2
+
+name = None
+
+while not name:
+    name = input("Enter your name: ")
+
+print('Hello, ' + name)
