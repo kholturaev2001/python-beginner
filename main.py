@@ -1,9 +1,9 @@
-# function = a block of code which is executed only when it is called
+# return statement = Functions send Python values/objects back to the caller
+#                    These values/objects are known as the function's return value
 
-def hello(first_name, last_name, age):
-    print('Hello, ' + first_name + ' ' + last_name)
-    print('You are ' + str(age) + ' years old!')
-    print('Have a nice a day!')
+def multiply(num1, num2):
+    return num1 * num2
 
+x = multiply(5, 7)
 
-hello('Muhammadrasul', 'Kholturaev', 21)
+print(x)
