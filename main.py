@@ -1,16 +1,24 @@
-# set = collection which is unordered, unindexed. No duplicate values
+# dictionary =  A changeable/mutable, unordered collection of unique key:value pairs
+#               Fast because they use hashing, allow us to access a value quickly
 
-utensils = {'fork', 'spoon',  'knife'}
-dishes = {'bowl', 'plate', 'cup', 'knife'}
+capitals = {
+    'USA': 'Washington D.C.',
+    'India': 'New Deli',
+    'China': 'Beijing',
+    'Russia': 'Moscow'
+}
 
-# utensils.add('napkin')
-# utensils.remove('fork')
-# utensils.clear()
-# utensils.update(dishes)
-# dinner_table = utensils.union(dishes)
+capitals.update({'Germany': 'Berlin'})
+capitals.update({'USA': 'New York'})
+capitals.pop('China')
+# capitals.clear()
 
-# print(dishes.difference(utensils))
-print(utensils.intersection(dishes)) # what element do these sets have in common
+print(capitals['Russia'])
+print(capitals['Germany'])
+print(capitals.get('Germany'))  # this much safer way to check
+print(capitals.keys())
+print(capitals.values())
+print(capitals.items())
 
-# for x in dinner_table:
-#     print(x)
+for key, value in capitals.items():
+    print(key, value)
