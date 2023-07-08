@@ -1,11 +1,26 @@
-# nested loops    =   one loop inside of another loop, i.e. The "inner loop" will finish all of its iterations
-#                     before finishing one interation of the "outer loop"
+# Loop Control Statements = change a loops execution from its normal sequence
 
-rows = int(input("How many rows?: "))
-columns = int(input("How many columns?: "))
-symbol = input('Enter a symbol to use: ')
+# break =           used to terminate the loop entirely
+# continue =        skips to the next interation of the loop
+# pass =            does nothing, acts as a placeholder
 
-for i in range(rows):
-    for j in range(columns):
-        print(symbol, end='')
-    print()
+# while True:
+#     name = input('Enter your name: ')
+#     if name.strip() != "":
+#         break
+
+
+
+#
+# phone_number = '123-456-7890'
+#
+# for i in phone_number:
+#     if i == '-':
+#         continue
+#     print(i, end='')
+
+for i in range(1, 21):
+    if i == 13:
+        pass
+    else:
+        print(i)
