@@ -1,15 +1,10 @@
-# list = used to store a multiple items in a single variable  => array
+# 2D lists = a list of lists
 
-food = ['pizza', 'hamburger', 'osh', 'mantu', 'pudding']
+drinks = ['coffee', 'soda', 'tea']
+dinner = ['pizza', 'hamburger', 'hot-dog']
+dessert = ['cake', 'ice cream']
 
-food[0] = 'sushi'
+menu = [drinks, dinner, dessert]
 
-# food.append('ice cream')
-# food.remove('hamburger')
-# food.pop()
-# food.insert(1, 'cake')
-# food.sort()
-# food.clear()
 
-for x in food:
-    print(x)
+print(menu[1][2])
