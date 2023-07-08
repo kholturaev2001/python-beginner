@@ -1,24 +1,14 @@
-# dictionary =  A changeable/mutable, unordered collection of unique key:value pairs
-#               Fast because they use hashing, allow us to access a value quickly
+# index operator [] = gives access to a sequence's element (str, list, tuples)
 
-capitals = {
-    'USA': 'Washington D.C.',
-    'India': 'New Deli',
-    'China': 'Beijing',
-    'Russia': 'Moscow'
-}
+name = 'bro Code:'
 
-capitals.update({'Germany': 'Berlin'})
-capitals.update({'USA': 'New York'})
-capitals.pop('China')
-# capitals.clear()
+# if name[0].islower():
+#     name = name.capitalize()
 
-print(capitals['Russia'])
-print(capitals['Germany'])
-print(capitals.get('Germany'))  # this much safer way to check
-print(capitals.keys())
-print(capitals.values())
-print(capitals.items())
+first_name = name[:3].upper()
+last_name = name[4:].lower()
+last_character = name[-1]
 
-for key, value in capitals.items():
-    print(key, value)
+print(first_name)
+print(last_name)
+print(last_character)
