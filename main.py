@@ -1,8 +1,11 @@
-# keyword arguments =   arguments preceded by an identifier when we pass them to a function
-#                       The order of the arguments doesn't matter, unlike positional arguments
-#                       Python knows the names of the arguments that our function receives
+# nested functions calls =  function calls inside other function calls
+#                           innermost function calls are resolved first
+#                           returned value is used as argument for the next outer function
 
-def hello(first, middle, last):
-    print('Hello ' + first + ' ' + middle + ' ' + last)
+# num = input('Enter a whole positive number: ')
+# num = float(num)
+# num = abs(num)
+# num = round(num)
+# print(num)
 
-hello(middle='Abdulazizovich', first='Muhammadrasul', last='Kholturaev')
+print(round(abs(float(input('Enter a whole positive number: ')))))
