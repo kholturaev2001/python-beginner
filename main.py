@@ -1,10 +1,13 @@
-# 2D lists = a list of lists
+# tuple =   collection which is ordered and unchangeable
+#           used to group together related data
 
-drinks = ['coffee', 'soda', 'tea']
-dinner = ['pizza', 'hamburger', 'hot-dog']
-dessert = ['cake', 'ice cream']
+student = ('Broo', 21, 'male')
 
-menu = [drinks, dinner, dessert]
+print(student.count('Bro'))
+print(student.index('male'))
 
+for x in student:
+    print(x)
 
-print(menu[1][2])
+if "Bro" in student:
+    print("Bro is here")
