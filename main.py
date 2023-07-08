@@ -1,20 +1,22 @@
-# while loop = a statement that will execute its block of code,
-#              as long as it's condition remains true
+import time
 
-# name = ''
-#
-# while len(name) == 0:
-#     name = input("Enter your name: ")
-#
-# print('Hello, ' + name)
+# for loop = a statement that will execute its block of code a limited amount of times
 
 
+#                               while loop = unlimited
+#                               for loop = limited
 
-# Version 2
+# for i in range(10):
+#     print(i+1)
 
-name = None
+# for i in range(50, 100+1, 2):
+#     print(i)
 
-while not name:
-    name = input("Enter your name: ")
+# for i in 'Bro Code':
+#     print(i)
 
-print('Hello, ' + name)
+
+for seconds in range(10, 0, -1):
+    print(seconds)
+    time.sleep(1)
+print('Happy New Year!')
