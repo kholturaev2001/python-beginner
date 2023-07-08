@@ -1,11 +1,12 @@
-# scope = The region that a variable is recognized
-#         A variable is only available from inside the region it is created.
-#         A global and locally scoped versions of a variable can be created.
+# *args =   parameter that will pack all arguments of a function into a tuple
+#           useful so that a function can accept a varying amount of arguments
 
-name = 'Kholturaev'         # global version
-def display_name():
-    name = 'Muhammadrasul'   # local scope
-    print(name)
+def add(*args):
+    sum = 0;
+    args = list(args)
+    args[0] = 0
+    for i in args:
+        sum += i
+    return sum
 
-display_name()
-print(name)
+print(add(1, 2, 3, 5,2, 5))
