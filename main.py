@@ -1,13 +1,16 @@
-# tuple =   collection which is ordered and unchangeable
-#           used to group together related data
+# set = collection which is unordered, unindexed. No duplicate values
 
-student = ('Broo', 21, 'male')
+utensils = {'fork', 'spoon',  'knife'}
+dishes = {'bowl', 'plate', 'cup', 'knife'}
 
-print(student.count('Bro'))
-print(student.index('male'))
+# utensils.add('napkin')
+# utensils.remove('fork')
+# utensils.clear()
+# utensils.update(dishes)
+# dinner_table = utensils.union(dishes)
 
-for x in student:
-    print(x)
+# print(dishes.difference(utensils))
+print(utensils.intersection(dishes)) # what element do these sets have in common
 
-if "Bro" in student:
-    print("Bro is here")
+# for x in dinner_table:
+#     print(x)
