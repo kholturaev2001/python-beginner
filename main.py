@@ -1,9 +1,8 @@
-# return statement = Functions send Python values/objects back to the caller
-#                    These values/objects are known as the function's return value
+# keyword arguments =   arguments preceded by an identifier when we pass them to a function
+#                       The order of the arguments doesn't matter, unlike positional arguments
+#                       Python knows the names of the arguments that our function receives
 
-def multiply(num1, num2):
-    return num1 * num2
+def hello(first, middle, last):
+    print('Hello ' + first + ' ' + middle + ' ' + last)
 
-x = multiply(5, 7)
-
-print(x)
+hello(middle='Abdulazizovich', first='Muhammadrasul', last='Kholturaev')
