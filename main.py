@@ -1,11 +1,11 @@
-# nested functions calls =  function calls inside other function calls
-#                           innermost function calls are resolved first
-#                           returned value is used as argument for the next outer function
+# scope = The region that a variable is recognized
+#         A variable is only available from inside the region it is created.
+#         A global and locally scoped versions of a variable can be created.
 
-# num = input('Enter a whole positive number: ')
-# num = float(num)
-# num = abs(num)
-# num = round(num)
-# print(num)
+name = 'Kholturaev'         # global version
+def display_name():
+    name = 'Muhammadrasul'   # local scope
+    print(name)
 
-print(round(abs(float(input('Enter a whole positive number: ')))))
+display_name()
+print(name)
