@@ -1,12 +1,10 @@
-# *args =   parameter that will pack all arguments of a function into a tuple
-#           useful so that a function can accept a varying amount of arguments
+# **kwargs =    parameters that will pack all arguments into a dictionary
+#               useful so that a function can accept a varying amount of keyword arguments
 
-def add(*args):
-    sum = 0;
-    args = list(args)
-    args[0] = 0
-    for i in args:
-        sum += i
-    return sum
+def hello(**kwargs):
+    # print('Hello ' + kwargs['first'] + ' ' + kwargs['last'])
+    print('Hello', end=' ')
+    for key, value in kwargs.items():
+        print(value, end=' ')
 
-print(add(1, 2, 3, 5,2, 5))
+hello(title='Mr.', first='Muhammadrasul', last='Kholturaev', middle='Abdulazizovich')
