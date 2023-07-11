@@ -1,9 +1,11 @@
 
 # str.format() =    optional method that gives users more control when displaying output
 
-name = 'Muhammadrasul'
-#
-print('Hello, my name is {}'.format(name))
-print('Hello, my name is {:<10}. Nice to meet you'.format(name))     # right padding
-print('Hello, my name is {:>10}. Nice to meet you'.format(name))     # left padding
-print('Hello, my name is {:^10}. Nice to meet you'.format(name))     # center
+number = 1000
+
+print('The number pi is {:.3f}'.format(number))
+print('The number pi is {:,}'.format(number))
+print('The number pi is {:b}'.format(number))
+print('The number pi is {:o}'.format(number))
+print('The number pi is {:X}'.format(number))
+print('The number pi is {:e}'.format(number))
