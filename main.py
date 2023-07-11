@@ -1,9 +1,9 @@
+# writing/creating files in python
 
-# reading a content of a file
+text = 'Yoooooooo!\nThis is some text\nMay Allah bless you!'
 
-try:
-    with open('test.tx') as file:
-        print(file.read())
-except FileNotFoundError as e:
-    print(e)
-    print('That file was not found!')
+with open('test.txt', 'w') as file:
+    file.write(text)
+
+with open('test.txt', 'a') as file:
+    file.write("\nThis is an appended text")
