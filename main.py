@@ -1,11 +1,14 @@
+import random
 
-# str.format() =    optional method that gives users more control when displaying output
+x = random.randint(1, 7)
+y = random.random()
 
-number = 1000
+myList = ['rock', 'paper', 'scissors']
+z = random.choice(myList)
 
-print('The number pi is {:.3f}'.format(number))
-print('The number pi is {:,}'.format(number))
-print('The number pi is {:b}'.format(number))
-print('The number pi is {:o}'.format(number))
-print('The number pi is {:X}'.format(number))
-print('The number pi is {:e}'.format(number))
+# shuffle random moduls
+cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, "J", 'Q', 'M', '@']
+
+random.shuffle(cards)
+
+print(cards)
