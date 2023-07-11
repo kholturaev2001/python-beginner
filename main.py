@@ -1,14 +1,20 @@
-import random
+# exception =   events detected during execution that interrupt the flow of a program
 
-x = random.randint(1, 7)
-y = random.random()
+try:
+    numerator = int(input('Enter a number to divide: '))
+    dominator = int(input('Enter a number to divide by: '))
+    result = numerator / dominator
+    print(result)
+except ZeroDivisionError as e:
+    print(e)
+    print('You can not divide by zero! idiot!')
+except ValueError as e:
+    print(e)
+    print('Enter only numbers plz!')
+except Exception as e:
+    print(e)
+    print('Something went wrong :(')
 
-myList = ['rock', 'paper', 'scissors']
-z = random.choice(myList)
-
-# shuffle random moduls
-cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, "J", 'Q', 'M', '@']
-
-random.shuffle(cards)
-
-print(cards)
+else: print(str(result) + ' this is else statement')
+finally:
+    print("This will always execute")
