@@ -1,13 +1,9 @@
-import os
 
-path = 'C:\\Users\\user\\Desktop\\folder'
+# reading a content of a file
 
-
-if (os.path.exists(path)):
-    print('That location exists!')
-    if os.path.isfile(path):
-        print("That is a file!")
-    elif os.path.isdir(path):
-        print('That is a directory!')
-else:
-    print("That location doesn't exist!")
+try:
+    with open('test.tx') as file:
+        print(file.read())
+except FileNotFoundError as e:
+    print(e)
+    print('That file was not found!')
