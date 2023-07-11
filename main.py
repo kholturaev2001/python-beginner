@@ -1,7 +1,16 @@
-# copyfile() =  copies contents of a file
-# copy() =      copyfile() + permission mode + destination can be a directory
-# copy2() =     copy() + copies metadata (file's creation and modification times)
+# moving files/dirs using python
 
-import shutil
+import os
 
-shutil.copy2('test.txt', 'C:\\Users\\user\\Desktop\\copy.txt') # src, dst
+source = 'folder'
+destination = 'C:\\Users\\user\\Desktop\\folder'
+
+try:
+    if os.path.exists(destination):
+        print('There is already a file there')
+    else:
+        os.replace(source, destination)
+        print(source + ' was moved')
+except FileNotFoundError:
+    print(source + ' was not found')
+
