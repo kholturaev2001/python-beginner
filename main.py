@@ -1,9 +1,7 @@
-# writing/creating files in python
+# copyfile() =  copies contents of a file
+# copy() =      copyfile() + permission mode + destination can be a directory
+# copy2() =     copy() + copies metadata (file's creation and modification times)
 
-text = 'Yoooooooo!\nThis is some text\nMay Allah bless you!'
+import shutil
 
-with open('test.txt', 'w') as file:
-    file.write(text)
-
-with open('test.txt', 'a') as file:
-    file.write("\nThis is an appended text")
+shutil.copy2('test.txt', 'C:\\Users\\user\\Desktop\\copy.txt') # src, dst
