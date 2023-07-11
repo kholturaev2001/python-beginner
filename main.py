@@ -1,20 +1,13 @@
-# exception =   events detected during execution that interrupt the flow of a program
+import os
 
-try:
-    numerator = int(input('Enter a number to divide: '))
-    dominator = int(input('Enter a number to divide by: '))
-    result = numerator / dominator
-    print(result)
-except ZeroDivisionError as e:
-    print(e)
-    print('You can not divide by zero! idiot!')
-except ValueError as e:
-    print(e)
-    print('Enter only numbers plz!')
-except Exception as e:
-    print(e)
-    print('Something went wrong :(')
+path = 'C:\\Users\\user\\Desktop\\folder'
 
-else: print(str(result) + ' this is else statement')
-finally:
-    print("This will always execute")
+
+if (os.path.exists(path)):
+    print('That location exists!')
+    if os.path.isfile(path):
+        print("That is a file!")
+    elif os.path.isdir(path):
+        print('That is a directory!')
+else:
+    print("That location doesn't exist!")
