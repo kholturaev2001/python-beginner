@@ -1,22 +1,10 @@
-# deleting folder, which is not empty using python
+# module = a file containing python code. May contain function, classes, etc.
+# used with modular programming, which is to separate a program into parts
 
-import os
-import shutil
+# import messages as msg
+# msg.hello()
+# msg.bye()
 
-path = 'folder'
-
-try:
-    # os.remove(path)
-    # os.rmdir(path)
-    shutil.rmtree(path)
-
-except FileNotFoundError:
-    print('That file was not found!')
-except PermissionError:
-    print("You don't have permission to delete that")
-except OSError:
-    print("You can't delete that, using that function")
-
-
-else:
-    print(path + " was deleted")
+from messages import hello, bye # or from messages import *
+hello()
+bye()
