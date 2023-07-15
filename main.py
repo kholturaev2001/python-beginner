@@ -4,8 +4,14 @@ import os
 import shutil
 
 try:
-    path = 'test.txt'
-    os.remove(path)
+    path = 'empty_folder'
+    os.rmdir(path)
 
 except FileNotFoundError:
     print('That file was not found!')
+
+except PermissionError:
+    print("You don't have permission to delete that")
+
+else:
+    print(path + " was deleted")
