@@ -1,16 +1,11 @@
-# moving files/dirs using python
+# deleting files using python ## NEEDS TO BE COMMITED AND PUSHED
 
 import os
-
-source = 'folder'
-destination = 'C:\\Users\\user\\Desktop\\folder'
+import shutil
 
 try:
-    if os.path.exists(destination):
-        print('There is already a file there')
-    else:
-        os.replace(source, destination)
-        print(source + ' was moved')
-except FileNotFoundError:
-    print(source + ' was not found')
+    path = 'test.txt'
+    os.remove(path)
 
+except FileNotFoundError:
+    print('That file was not found!')
