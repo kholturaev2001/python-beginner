@@ -1,12 +1,36 @@
-from car import Car
+# INHERITANCE in python
+# Classes can have children.
 
-car_1 = Car('Mercedes', 'S-Class', 2022, 'black')
-car_2 = Car('Toyota', 'Camry', 2019, 'white')
+class Animal: # parent class
 
-# Car.wheels = 3  # it changes all instances of a class
-car_1.wheels = 6
+    alive = True
 
-print(car_1.wheels)
-print(car_2.wheels)
-print(Car.wheels)
+    def eat(self):
+        print('This animal is eating')
+
+    def sleep(self):
+        print('This animal is sleeping')
+
+
+class Rabbit(Animal): # this is a child class, and it inherits all what the Animal class has
+    def run(self):
+        print('This rabbit is running')
+class Fish(Animal):
+    def swim(self):
+        print('This fish is swimming')
+class Hawk(Animal):
+    def fly(self):
+        print('This hawk is flying')
+
+rabbit = Rabbit()
+fish = Fish()
+hawk = Hawk()
+
+# print(rabbit.alive)
+# fish.eat()
+# hawk.sleep()
+
+rabbit.run()
+fish.swim()
+hawk.fly()
 
