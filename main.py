@@ -3,12 +3,10 @@ from car import Car
 car_1 = Car('Mercedes', 'S-Class', 2022, 'black')
 car_2 = Car('Toyota', 'Camry', 2019, 'white')
 
-# attributes
-print(car_2.company)
-print(car_2.model)
-print(car_2.year)
-print(car_2.color)
+# Car.wheels = 3  # it changes all instances of a class
+car_1.wheels = 6
 
-# methods
-car_2.drive()
-car_2.stop()
+print(car_1.wheels)
+print(car_2.wheels)
+print(Car.wheels)
+
