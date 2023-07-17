@@ -1,14 +1,29 @@
-# method overriding = is the ability of an OOP language to allow a subclass (child class) to provide a specific implementation of a method that is already provided by one of its parents
+# method chaining = is used to call multiple methods sequentially
+#                   each call performs an action on the same object and returns self
 
-class Animal:
+class Car:
 
-    def eat(self): # in this case we want to override eat() method
-        print('This animal is eating')
+    def turn_on(self):
+        print('You start the engine')
+        return self
 
-class Rabbit(Animal):
+    def drive(self):
+        print('You drive the engine')
+        return self
 
-    def eat(self):
-        print('This rabbit is eating a carrot')
+    def brake(self):
+        print('You step the brakes')
+        return self
 
-rabbit = Rabbit()
-rabbit.eat()
+    def turn_off(self):
+        print('You turn off engine')
+        return self
+
+car = Car()
+
+# car.turn_on().drive()
+# car.brake().turn_off()
+car.turn_on()\
+    .drive()\
+    .brake()\
+    .turn_off()
