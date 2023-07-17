@@ -1,28 +1,15 @@
-# multiple inheritance = when a child class is derived from more than one parent class
+# method overriding = is the ability of an OOP language to allow a subclass (child class)
+# to provide a specific implementation of a method that is already provided by one of its parents
 
-class Prey:
+class Animal:
 
-    def flee(self):
-        print('This animal flees')
+    def eat(self): # in this case we want to override eat() method
+        print('This animal is eating')
 
-class Predator:
-    def hunt(self):
-        print("This animal is hunting")
+class Rabbit(Animal):
 
-class Rabbit(Prey):
-    pass
-
-class Hawk(Predator):
-    pass
-
-class Fish(Prey, Predator):
-    pass
+    def eat(self):
+        print('This rabbit is eating a carrot')
 
 rabbit = Rabbit()
-hawk = Hawk()
-fish = Fish()
-
-rabbit.flee()
-hawk.hunt()
-fish.flee()
-fish.hunt()
+rabbit.eat()
