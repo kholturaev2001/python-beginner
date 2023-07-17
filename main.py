@@ -1,5 +1,4 @@
-# method overriding = is the ability of an OOP language to allow a subclass (child class)
-# to provide a specific implementation of a method that is already provided by one of its parents
+# method overriding = is the ability of an OOP language to allow a subclass (child class) to provide a specific implementation of a method that is already provided by one of its parents
 
 class Animal:
 
