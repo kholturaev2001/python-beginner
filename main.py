@@ -1,29 +1,31 @@
-# method chaining = is used to call multiple methods sequentially
-#                   each call performs an action on the same object and returns self
+# super() = Function used to give access to the methods of a parent class.
+#           Returns a temporary object of a parent class when used
 
-class Car:
+class Rectangle:
 
-    def turn_on(self):
-        print('You start the engine')
-        return self
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
 
-    def drive(self):
-        print('You drive the engine')
-        return self
+class Square(Rectangle):
 
-    def brake(self):
-        print('You step the brakes')
-        return self
+    def __init__(self, length, width):
+        super().__init__(length, width)
 
-    def turn_off(self):
-        print('You turn off engine')
-        return self
+    def area(self):
+        return self.length * self.width
 
-car = Car()
+class Cube(Rectangle):
 
-# car.turn_on().drive()
-# car.brake().turn_off()
-car.turn_on()\
-    .drive()\
-    .brake()\
-    .turn_off()
+    def __init__(self, length, width, height):
+        super().__init__(length, width)
+        self.height = height
+
+    def volume(self):
+        return self.length * self.width * self.height
+
+square = Square(3, 3)
+cube = Cube(3, 3, 3)
+
+print(square.area())
+print(cube.volume())
